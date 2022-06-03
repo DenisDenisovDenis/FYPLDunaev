@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F407CD0-A5F0-49CB-B1D2-FDF209C54E3C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FYPLDunaev</RootNamespace>
+    <AssemblyName>FYPLDunaev</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassTotal.cs" />
+    <Compile Include="FfootballTournamentsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FfootballTournamentsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccounts.Designer.cs">
+      <DependentUpon>FormAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddClub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddClub.Designer.cs">
+      <DependentUpon>FormAddClub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddMatch.Designer.cs">
+      <DependentUpon>FormAddMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCoach.Designer.cs">
+      <DependentUpon>FormCoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCoachProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCoachProfile.Designer.cs">
+      <DependentUpon>FormCoachProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFootballist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFootballist.Designer.cs">
+      <DependentUpon>FormFootballist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFootballistProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFootballistProfile.Designer.cs">
+      <DependentUpon>FormFootballistProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSponsor.Designer.cs">
+      <DependentUpon>FormSponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSponsorProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSponsorProfile.Designer.cs">
+      <DependentUpon>FormSponsorProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAccounts.resx">
+      <DependentUpon>FormAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddClub.resx">
+      <DependentUpon>FormAddClub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddMatch.resx">
+      <DependentUpon>FormAddMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCoach.resx">
+      <DependentUpon>FormCoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCoachProfile.resx">
+      <DependentUpon>FormCoachProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFootballist.resx">
+      <DependentUpon>FormFootballist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFootballistProfile.resx">
+      <DependentUpon>FormFootballistProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSponsor.resx">
+      <DependentUpon>FormSponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSponsorProfile.resx">
+      <DependentUpon>FormSponsorProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="FfootballTournamentsDataSet.xsc">
+      <DependentUpon>FfootballTournamentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FfootballTournamentsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FfootballTournamentsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FfootballTournamentsDataSet.xss">
+      <DependentUpon>FfootballTournamentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
